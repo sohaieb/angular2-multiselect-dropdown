@@ -1,5 +1,5 @@
 {
-  "name": "angular2-multiselect-dropdown",
+  "name": "angular2-multiselect-fixed-add-btn",
   "version": "4.6.3",
   "description": "Angular 2 and angular 4 and angular 6 multiselect dropdown component.",
   "keywords": [
@@ -10,7 +10,7 @@
     "angular 6 dropdown multiselect"
   ],
   "license": "MIT",
-  "author": "Pradeep Terli",
+  "author": "Pradeep Terli, Sohaieb azaiez",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
