@@ -1,7 +1,7 @@
 {
-  "name": "angular2-multiselect-dropdown",
+  "name": "angular2-multiselect-dropdown-fixed-addnewitem",
   "version": "4.6.3",
-  "description": "Angular 2 and angular 4 and angular 6 multiselect dropdown component.",
+  "description": "Angular 2 and angular 4 and angular 6 multiselect dropdown component. FIXED add new item button issue.",
   "keywords": [
     "angular 2 multiselect dropdown",
     "angular 4 multiselect dropdown",
@@ -10,7 +10,7 @@
     "angular 6 dropdown multiselect"
   ],
   "license": "MIT",
-  "author": "Pradeep Terli",
+  "author": "Pradeep Terli,Sohaieb Azaiez",
   "scripts": {
   },
   "dependencies": {

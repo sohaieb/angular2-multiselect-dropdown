@@ -101,7 +101,7 @@
             <label class="nodata-label" *ngIf="settings.groupBy && groupedData?.length == 0" [hidden]="filter == undefined || filter?.length == 0">{{settings.noDataLabel}}</label>
 
             <div class="btn-container" *ngIf="settings.addNewItemOnFilter && filterLength == 0" [hidden]="filter == undefined || filter?.length == 0">
-            <button class="c-btn btn-iceblue" (click)="addFilterNewItem()">{{settings.addNewButtonText}}</button>
+            <button class="c-btn btn-iceblue" type="button" (click)="addFilterNewItem()">{{settings.addNewButtonText}}</button>
             </div>
         </div>
         <div class="filter-select-all" *ngIf="settings.lazyLoading && settings.enableFilterSelectAll">
@@ -195,7 +195,7 @@
                             </li>
                             </span>
                 </ul>
-                    
+
                 </li>
                 </span>
             </ul>

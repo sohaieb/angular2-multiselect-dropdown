@@ -9,7 +9,7 @@ import { Item, Badge, Search, TemplateRenderer, CIcon } from './menu-item';
 import { DataService } from './multiselect.service';
 import { Subscription, Subject  } from 'rxjs';
 import { VirtualScrollerModule, VirtualScrollerComponent } from './virtual-scroll/virtual-scroll';
-import { map, debounceTime, distinctUntilChanged, switchMap, tap } from 'rxjs/operators'; 
+import { map, debounceTime, distinctUntilChanged, switchMap, tap } from 'rxjs/operators';
 import { ThrowStmt } from '@angular/compiler';
 
 export const DROPDOWN_CONTROL_VALUE_ACCESSOR: any = {
@@ -154,7 +154,7 @@ export class AngularMultiSelect implements OnInit, ControlValueAccessor, OnChang
         enableFilterSelectAll: true,
         selectGroup: false,
         addNewItemOnFilter: false,
-        addNewButtonText: "Add",
+        addNewButtonText: "Ajouter",
         escapeToClose: true,
         clearAll: true
     }
@@ -472,13 +472,13 @@ export class AngularMultiSelect implements OnInit, ControlValueAccessor, OnChang
             let arr = [];
             if(obj[this.settings.labelKey].toLowerCase().indexOf(this.filter.toLowerCase()) > -1){
                 arr = obj.list;
-            }   
+            }
             else {
                 arr = obj.list.filter(t => {
                     return t[this.settings.labelKey].toLowerCase().indexOf(this.filter.toLowerCase()) > -1;
                 });
             }
-            
+
             obj.list = arr;
             if(obj[this.settings.labelKey].toLowerCase().indexOf(this.filter.toLowerCase()) > -1){
                 return arr;
@@ -770,10 +770,10 @@ export class AngularMultiSelect implements OnInit, ControlValueAccessor, OnChang
     }
     onScrollEnd(e: any) {
         if(e.endIndex === this.data.length - 1 || e.startIndex === 0){
-            
+
         }
         this.onScrollToEnd.emit(e);
-        
+
     }
     ngOnDestroy() {
         if (this.subscription) {
